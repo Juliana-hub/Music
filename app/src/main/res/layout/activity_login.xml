@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundtwo" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="五度音乐"
+        android:textColor="#E4D7E4"
+        android:textSize="44sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        app:srcCompat="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="242dp"
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="昵称输入"
+        android:textColor="#8F8E8E"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/passwordtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toEndOf="@+id/user"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="82dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toStartOf="@+id/passwordtext"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintVertical_bias="0.457"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#D3C6CF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="密码输入"
+        android:textColor="#8F8E8E"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/registerbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="130dp"
+        android:layout_height="62dp"
+        android:background="#D3C6CF"
+        android:text="登录"
+        android:textColor="#171717"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/registerbutton"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="130dp"
+        android:layout_height="62dp"
+        android:background="#A4C4EA"
+        android:text="注册"
+        android:textColor="#171717"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <TextView
+        android:id="@+id/forggetpassword"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:text="忘记密码？"
+        android:textColor="#F1EDED"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/registerbutton"
+        app:layout_constraintTop_toBottomOf="@+id/registerbutton"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordtext"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

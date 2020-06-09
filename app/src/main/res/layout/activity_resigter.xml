@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundtwo" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="五度音乐"
+        android:textColor="#E4D7E4"
+        android:textSize="44sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338"
+        app:srcCompat="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="326dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="212dp"
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="设置昵称"
+        android:textColor="#8F8E8E"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="326dp"
+        android:layout_height="70dp"
+        android:background="#D3C6CF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="设置密码"
+        android:textColor="#8F8E8E"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/username3"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/username3"
+        android:layout_width="326dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="444dp"
+        android:background="#D3C6CF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="确认密码"
+        android:textColor="#8F8E8E"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="172dp"
+        android:layout_height="70dp"
+        android:background="#A4C4EA"
+        android:text="注册"
+        android:textColor="#171717"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

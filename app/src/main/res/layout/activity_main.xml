@@ -159,7 +159,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/添加"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_input_add"
@@ -177,7 +177,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/下载1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"
@@ -186,7 +186,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/下载"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"
@@ -195,7 +195,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/下载2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"

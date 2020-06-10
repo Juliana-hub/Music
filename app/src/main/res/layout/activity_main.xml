@@ -4,15 +4,203 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:background="#A4C4EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp">
+
+
+    </SearchView>
+
+
+    <EditText
+        android:id="@+id/singer"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="歌曲热榜"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="old town road"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="342dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/textView3"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="See you"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <EditText
+        android:id="@+id/textView4"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="I like me better"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="461dp" />
+    <EditText
+        android:id="@+id/textView5"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:background="#A4C4EA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="come back"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="105dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/exo_icon_pause" />
+
+    <ImageButton
+        android:id="@+id/上一曲"
+        android:layout_width="84dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:srcCompat="@drawable/exo_controls_rewind"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <ImageButton
+        android:id="@+id/下一曲"
+        android:layout_width="86dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:srcCompat="@drawable/exo_controls_fastforward" />
+
+    <ImageButton
+        android:id="@+id/播放页面"
+        android:layout_width="105dp"
+        android:layout_height="88dp"
+        app:srcCompat="@drawable/two"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <EditText
+        android:id="@+id/textView6"
+        android:layout_width="520dp"
+        android:layout_height="60dp"
+        android:background="#"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="最近搜索：we shot of the moon"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="377dp"
+        tools:layout_editor_absoluteY="347dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="377dp"
+        tools:layout_editor_absoluteY="410dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="377dp"
+        tools:layout_editor_absoluteY="470dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"
+        tools:layout_editor_absoluteX="446dp"
+        tools:layout_editor_absoluteY="351dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"
+        tools:layout_editor_absoluteX="446dp"
+        tools:layout_editor_absoluteY="410dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp"
+        tools:layout_editor_absoluteX="446dp"
+        tools:layout_editor_absoluteY="469dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

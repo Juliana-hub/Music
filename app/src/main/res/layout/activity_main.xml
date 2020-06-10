@@ -7,18 +7,19 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
+
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="520dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
         android:background="#A4C4EA"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="4dp">
 
 
     </SearchView>
-
 
     <EditText
         android:id="@+id/singer"
@@ -134,7 +135,7 @@
         tools:layout_editor_absoluteY="609dp" />
 
     <EditText
-        android:id="@+id/textView6"
+        android:id="@+id/textView9"
         android:layout_width="520dp"
         android:layout_height="60dp"
         android:background="#"
@@ -145,8 +146,8 @@
         android:textSize="25sp"
         android:textStyle="italic"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="93dp" />
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="71dp" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -201,6 +202,21 @@
         tools:layout_editor_absoluteX="446dp"
         tools:layout_editor_absoluteY="469dp"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textView6"
+        android:layout_width="143dp"
+        android:layout_height="92dp"
+        android:background="#"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="泡沫-邓紫棋"
+        android:textColor="#8F8E8E"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
